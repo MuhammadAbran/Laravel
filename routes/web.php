@@ -27,3 +27,5 @@ Route::resource('post', 'PostController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('home/store', ['as' => 'home.store', 'uses' => 'HomeController']);
